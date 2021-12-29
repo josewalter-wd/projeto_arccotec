@@ -1,0 +1,796 @@
+/*!
+ * Start Bootstrap - SB Admin (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+/* Global Styles */
+
+body {
+    margin-top: 100px;
+    background-color: #222;
+}
+
+@media(min-width:768px) {
+    body {
+        margin-top: 50px;
+    }
+}
+
+#wrapper {
+    padding-left: 0;
+}
+
+#page-wrapper {
+    width: 100%;
+    padding: 0;
+    background-color: #fff;
+}
+
+.huge {
+    font-size: 50px;
+    line-height: normal;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 225px;
+    }
+
+    #page-wrapper {
+        padding: 10px;
+    }
+}
+
+/* Top Navigation */
+
+.top-nav {
+    padding: 0 15px;
+}
+
+.top-nav>li {
+    display: inline-block;
+    float: left;
+}
+
+.top-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 20px;
+    color: #999;
+}
+
+.top-nav>li>a:hover,
+.top-nav>li>a:focus,
+.top-nav>.open>a,
+.top-nav>.open>a:hover,
+.top-nav>.open>a:focus {
+    color: #fff;
+    background-color: #000;
+}
+
+.top-nav>.open>.dropdown-menu {
+    float: left;
+    position: absolute;
+    margin-top: 0;
+    border: 1px solid rgba(0,0,0,.15);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #fff;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+.top-nav>.open>.dropdown-menu>li>a {
+    white-space: normal;
+}
+
+ul.message-dropdown {
+    padding: 0;
+    max-height: 250px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+li.message-preview {
+    width: 275px;
+    border-bottom: 1px solid rgba(0,0,0,.15);
+}
+
+li.message-preview>a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+li.message-footer {
+    margin: 5px 0;
+}
+
+ul.alert-dropdown {
+    width: 200px;
+}
+
+/* Side Navigation */
+
+@media(min-width:768px) {
+    .side-nav {
+        position: fixed;
+        top: 51px;
+        left: 225px;
+        width: 225px;
+        margin-left: -225px;
+        border: none;
+        border-radius: 0;
+        overflow-y: auto;
+        background-color: #222;
+        bottom: 0;
+        overflow-x: hidden;
+        padding-bottom: 40px;
+    }
+
+    .side-nav>li>a {
+        width: 225px;
+    }
+
+    .side-nav li a:hover,
+    .side-nav li a:focus {
+        outline: none;
+        background-color: #000 !important;
+    }
+}
+
+.side-nav>li>ul {
+    padding: 0;
+}
+
+.side-nav>li>ul>li>a {
+    display: block;
+    padding: 10px 15px 10px 38px;
+    text-decoration: none;
+    color: #999;
+}
+
+.side-nav>li>ul>li>a:hover {
+    color: #fff;
+}
+
+/* Flot Chart Containers */
+
+.flot-chart {
+    display: block;
+    height: 400px;
+}
+
+.flot-chart-content {
+    width: 100%;
+    height: 100%;
+}
+
+/* Custom Colored Panels */
+
+.huge {
+    font-size: 30px;
+}
+
+.panel-green {
+    border-color: #5cb85c;
+}
+
+.panel-green > .panel-heading {
+    border-color: #5cb85c;
+    color: #fff;
+    background-color: #5cb85c;
+}
+
+.panel-green > a {
+    color: #5cb85c;
+}
+
+.panel-green > a:hover {
+    color: #3d8b3d;
+}
+
+.panel-red {
+    border-color: #d9534f;
+}
+
+.panel-red > .panel-heading {
+    border-color: #d9534f;
+    color: #fff;
+    background-color: #d9534f;
+}
+
+.panel-red > a {
+    color: #d9534f;
+}
+
+.panel-red > a:hover {
+    color: #b52b27;
+}
+
+.panel-yellow {
+    border-color: #f0ad4e;
+}
+
+.panel-yellow > .panel-heading {
+    border-color: #f0ad4e;
+    color: #fff;
+    background-color: #f0ad4e;
+}
+
+.panel-yellow > a {
+    color: #f0ad4e;
+}
+
+.panel-yellow > a:hover {
+    color: #df8a13;
+}
+
+/*PROXIMOS*/
+
+.panel-blue-violet {
+    border-color: blueviolet;
+}
+
+.panel-blue-violet > .panel-heading {
+    border-color: blueviolet;
+    color: #fff;
+    background-color: blueviolet;
+}
+
+.panel-blue-violet > a {
+    color: blueviolet;
+}
+
+.panel-blue-violet > a:hover {
+    color: blueviolet;
+}
+
+/**/
+
+.panel-gold {
+    border-color: gold;
+}
+
+.panel-gold > .panel-heading {
+    border-color: gold;
+    color: #000;
+    background-color: gold;
+}
+
+.panel-gold > a {
+    color: #000;
+}
+
+.panel-gold > a:hover {
+    color: #000;
+}
+
+/**/
+
+.panel-blue-violet {
+    border-color: blueviolet;
+}
+
+.panel-blue-violet > .panel-heading {
+    border-color: blueviolet;
+    color: #fff;
+    background-color: blueviolet;
+}
+
+.panel-blue-violet > a {
+    color: blueviolet;
+}
+
+.panel-blue-violet > a:hover {
+    color: blueviolet;
+}
+
+/**/
+
+.panel-aquamarine {
+    border-color: aquamarine;
+}
+
+.panel-aquamarine > .panel-heading {
+    border-color: aquamarine;
+    color: #000;
+    background-color: aquamarine;
+}
+
+.panel-aquamarine > a {
+    color: #000;
+}
+
+.panel-aquamarine > a:hover {
+    color: #000;
+}
+
+/**/
+
+.panel-blue {
+    border-color: blue;
+}
+
+.panel-blue > .panel-heading {
+    border-color: blue;
+    color: #fff;
+    background-color: blue;
+}
+
+.panel-blue > a {
+    color: blue;
+}
+
+.panel-blue > a:hover {
+    color: blue;
+}
+
+/**/
+
+.panel-chocolate {
+    border-color: chocolate;
+}
+
+.panel-chocolate > .panel-heading {
+    border-color: chocolate;
+    color: #fff;
+    background-color: chocolate;
+}
+
+.panel-chocolate > a {
+    color: chocolate;
+}
+
+.panel-chocolate > a:hover {
+    color: chocolate;
+}
+
+/**/
+
+.panel-coral {
+    border-color: coral;
+}
+
+.panel-coral > .panel-heading {
+    border-color: coral;
+    color: #fff;
+    background-color: coral;
+}
+
+.panel-coral > a {
+    color: coral;
+}
+
+.panel-coral > a:hover {
+    color: coral;
+}
+
+/**/
+
+.panel-crimson {
+    border-color: crimson;
+}
+
+.panel-crimson > .panel-heading {
+    border-color: crimson;
+    color: #fff;
+    background-color: crimson;
+}
+
+.panel-crimson > a {
+    color: crimson;
+}
+
+.panel-crimson > a:hover {
+    color: crimson;
+}
+
+/**/
+
+.panel-orange {
+    border-color: orange;
+}
+
+.panel-orange > .panel-heading {
+    border-color: orange;
+    color: #fff;
+    background-color: orange;
+}
+
+.panel-orange > a {
+    color: orange;
+}
+
+.panel-orange > a:hover {
+    color: orange;
+}
+
+/**/
+
+.panel-light-coral {
+    border-color: lightcoral;
+}
+
+.panel-light-coral > .panel-heading {
+    border-color: lightcoral;
+    color: #fff;
+    background-color: lightcoral;
+}
+
+.panel-light-coral > a {
+    color: lightcoral;
+}
+
+.panel-light-coral > a:hover {
+    color: lightcoral;
+}
+
+/**/
+
+/**/
+
+.panel-lime-green {
+    border-color: limegreen;
+}
+
+.panel-lime-green > .panel-heading {
+    border-color: limegreen;
+    color: #fff;
+    background-color: limegreen;
+}
+
+.panel-lime-green > a {
+    color: limegreen;
+}
+
+.panel-lime-green > a:hover {
+    color: limegreen;
+}
+
+/**/
+
+/**/
+
+.panel-pale-green {
+    border-color: palegreen;
+}
+
+.panel-pale-green > .panel-heading {
+    border-color: palegreen;
+    color: #000;
+    background-color: palegreen;
+}
+
+.panel-pale-green > a {
+    color: #000;
+}
+
+.panel-pale-green > a:hover {
+    color: #000;
+}
+
+/**/
+
+.panel-royal-blue {
+    border-color: royalblue;
+}
+
+.panel-royal-blue > .panel-heading {
+    border-color: royalblue;
+    color: #fff;
+    background-color: royalblue;
+}
+
+.panel-royal-blue > a {
+    color: royalblue;
+}
+
+.panel-royal-blue > a:hover {
+    color: royalblue;
+}
+
+/**/
+
+.panel-sea-green {
+    border-color: seagreen;
+}
+
+.panel-sea-green > .panel-heading {
+    border-color: seagreen;
+    color: #fff;
+    background-color: seagreen;
+}
+
+.panel-sea-green > a {
+    color: seagreen;
+}
+
+.panel-sea-green > a:hover {
+    color: seagreen;
+}
+
+/**/
+
+/**/
+
+.panel-yellow-green {
+    border-color: yellowgreen;
+}
+
+.panel-yellow-green > .panel-heading {
+    border-color: yellowgreen;
+    color: #fff;
+    background-color: yellowgreen;
+}
+
+.panel-yellow-green > a {
+    color: yellowgreen;
+}
+
+.panel-yellow-green > a:hover {
+    color: yellowgreen;
+}
+
+
+/**/
+
+.panel-powder-blue {
+    border-color:  powderblue;
+}
+
+.panel-powder-blue > .panel-heading {
+    border-color:  powderblue;
+    color: #fff;
+    background-color: powderblue;
+}
+
+.panel-powder-blue > a {
+    color: powderblue;
+}
+
+.panel-powder-blue > a:hover {
+    color: powderblue;
+}
+
+/**/
+
+
+/**/
+
+.panel-dark-red {
+    border-color:  darkred;
+}
+
+.panel-dark-red > .panel-heading {
+    border-color:  darkred;
+    color: #fff;
+    background-color: darkred;
+}
+
+.panel-dark-red > a {
+    color: darkred;
+}
+
+.panel-dark-red > a:hover {
+    color: darkred;
+}
+
+/**/
+
+/**/
+
+.panel-gold-rod {
+    border-color: goldenrod;
+}
+
+.panel-gold-rod > .panel-heading {
+    border-color: goldenrod;
+    color: #fff;
+    background-color: goldenrod;
+}
+
+.panel-gold-rod > a {
+    color: goldenrod;
+}
+
+.panel-gold-rod > a:hover {
+    color: goldenrod;
+}
+
+/**/
+
+.panel-alice-blue {
+    border-color: aliceblue;
+}
+
+.panel-alice-blue > .panel-heading {
+    border-color: aliceblue;
+    color: #000;
+    background-color: aliceblue;
+}
+
+.panel-alice-blue > a {
+    color: #000;
+}
+
+.panel-alice-blue > a:hover {
+    color: #000;
+}
+
+/**/
+
+/**/
+
+.panel-light-salmon {
+    border-color: lightsalmon;
+}
+
+.panel-light-salmon > .panel-heading {
+    border-color: lightsalmon;
+    color: #fff;
+    background-color: lightsalmon;
+}
+
+.panel-light-salmon > a {
+    color: lightsalmon;
+}
+
+.panel-light-salmon > a:hover {
+    color: lightsalmon;
+}
+
+/**/
+
+
+/**/
+
+.panel-peru {
+    border-color: peru;
+}
+
+.panel-peru > .panel-heading {
+    border-color: peru;
+    color: #fff;
+    background-color: peru;
+}
+
+.panel-peru > a {
+    color: peru;
+}
+
+.panel-peru > a:hover {
+    color: peru;
+}
+
+/**/
+
+/**/
+
+.panel-violet {
+    border-color: violet;
+}
+
+.panel-violet > .panel-heading {
+    border-color: violet;
+    color: #fff;
+    background-color: violet;
+}
+
+.panel-violet > a {
+    color: violet;
+}
+
+.panel-violet > a:hover {
+    color: violet;
+}
+
+/**/
+
+.panel-siena {
+    border-color: sienna;
+}
+
+.panel-siena > .panel-heading {
+    border-color: sienna;
+    color: #fff;
+    background-color: sienna;
+}
+
+.panel-siena > a {
+    color: sienna;
+}
+
+.panel-siena > a:hover {
+    color: sienna;
+}
+
+/**/
+
+.panel-purple {
+    border-color: purple;
+}
+
+.panel-purple > .panel-heading {
+    border-color: purple;
+    color: #fff;
+    background-color: purple;
+}
+
+.panel-purple > a {
+    color: purple;
+}
+
+.panel-purple > a:hover {
+    color: purple;
+}
+
+/**/
+
+
+/**/
+
+.panel-orchid {
+    border-color: orchid;
+}
+
+.panel-orchid > .panel-heading {
+    border-color: orchid;
+    color: #fff;
+    background-color: orchid;
+}
+
+.panel-orchid > a {
+    color: orchid;
+}
+
+.panel-orchid > a:hover {
+    color: orchid;
+}
+
+/**/
+
+
+/**/
+
+.panel-moccasin {
+    border-color: moccasin;
+}
+
+.panel-moccasin > .panel-heading {
+    border-color: moccasin;
+    color: #000;
+    background-color: moccasin;
+}
+
+.panel-moccasin > a {
+    color: #000;
+}
+
+.panel-moccasin > a:hover {
+    color: #000;
+}
+
+/**/
+
+/**/
+
+.panel-magenta {
+    border-color: magenta;
+}
+
+.panel-magenta > .panel-heading {
+    border-color: magenta;
+    color: #fff;
+    background-color: magenta;
+}
+
+.panel-magenta > a {
+    color: magenta;
+}
+
+.panel-magenta > a:hover {
+    color: magenta;
+}
+
+/**/

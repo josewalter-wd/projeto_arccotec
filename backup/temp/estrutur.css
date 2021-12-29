@@ -1,0 +1,17 @@
+body {background-color:#cccccc; color:#666666; text-align: center; font: 12px Arial;}
+.pagina {clear: both;width: 100%; margin-top:80px;}
+
+a {color: #B80000; text-decoration: none;}
+a:hover {color: #B80000; text-decoration: underline;}
+img {border:none;}
+
+h1 {margin-bottom: 30px;font-size: 18px;}
+h2 a {font-size: 14px;}
+.aviso {margin-bottom: 30px;font-size: 16px;}
+.separador {margin-top: 20px; padding-top: 20px; border-top: solid 1px #ccc;}
+.informativo {margin-bottom: 20px;}
+.caixa {width: 444px;margin: 0 auto;}
+.topo {height: 7px; width: 444px; background: Transparent url('bg-super.gif') no-repeat left top;}
+.centro {width: 356px; padding: 26px 44px; background: Transparent url('bg-centr.gif') repeat-y left top;}
+.rodape {height: 8px; width: 444px; background: Transparent url('bg-infer.gif') no-repeat left top;}
+.ultimo_item {margin-bottom:0px;}
